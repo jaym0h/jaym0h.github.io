@@ -13,7 +13,7 @@ function pickHalo(arng) {
     const randStudent = Math.ceil(arng.quick() * (students.length+1)) - 1;
 
     const haloImg = document.getElementById("guess-image");
-    print(randStudent + " " + students[randStudent]);
+    console.log(randStudent + " " + students[randStudent]);
     //haloImg.src = "students/" + students[randStudent] + "/halo.webp";
 }
 
