@@ -14,19 +14,27 @@
 
     <body>
         <div class="container">
-            <section class="guess-image">
+            <section id="guess-image">
                 <img id="halo-img" src="students/airi/halo.webp" alt="Student Halo">
             </section>
-            <section class="guess-icons">
+            <section id="guess-icons">
 
             </section>
-            <section class="guess-input">
-
+            <section id="guess-input">
+                <input type="text" id="guess" name="guess" required/>
             </section>
         </div>
 
         <script>
-            const arng = new alea(new Date().getTime());
+            const date = new Date();
+            const year = date.getFullYear();
+            const month = date.getMonth();
+            const day = date.getDate();
+
+            const seed = (year * 100) + month;
+            seed = (seed * 100) + day;
+
+            const arng = new alea(seed);
             pickHalo(arng);
         </script>
     </body>
