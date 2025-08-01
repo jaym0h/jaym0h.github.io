@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Guess The Blue Archive Student">
+        <meta name="author" content="jaymoh">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guess The BA Student</title>
+        <link rel="stylesheet" href="index.css">
+
+        <script type="module" src="index.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/lib/alea.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <section class="guess-image">
+                <img id="halo-img" src="students/airi/halo.webp" alt="Student Halo">
+            </section>
+            <section class="guess-icons">
+
+            </section>
+            <section class="guess-input">
+
+            </section>
+        </div>
+
+        <script>
+            const arng = new alea(new Date.getTime());
+            pickHalo(arng);
+        </script>
+    </body>
+</html>
