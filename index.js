@@ -7,12 +7,13 @@ const students = ["airi", "akane", "akari", "ako", "aoba", "arisu", "aru", "asun
     "pina", "rei", "reijo", "reisa", "renge", "rio", "rumi", "saki", "sakurako", "saori", "satsuki", "saya", "seia", "sena", "serika", "serina",
     "shigure", "shimiko", "shiroko", "shiroko terror", "shizuko", "shun", "sumire", "suzumi", "toki", "tomoe", "tsubaki", "tsukuyo", "tsurugi",
     "ui", "umika", "utaha", "wakamo", "yoshimi", "yukari", "yuuka", "yuzu"
-    ]
+    ];
 
 function pickHalo(arng) {
-    const rand = Math.ceil(arng.quick() * (students.length+1)) - 1
+    const randStudent = Math.ceil(arng.quick() * (students.length+1)) - 1;
 
-    const haloImg = document.getElementById("guess-image")
-    haloImg.src = "students/" + students[randStudent] + "/halo.webp"
+    const haloImg = document.getElementById("guess-image");
+    print(randStudent + " " + students[randStudent]);
+    //haloImg.src = "students/" + students[randStudent] + "/halo.webp";
 }
 
