@@ -1,4 +1,4 @@
-const students = ["airi", "akane", "akari", "ako", "aoba", "arisu", "aru", "asuna", "atsuko", "ayane", "azusa", "cherino", "chiaki", "chihiro", 
+const students = ["airi", "akane", "akari", "ako", "aoba", "aris", "aru", "asuna", "atsuko", "ayane", "azusa", "cherino", "chiaki", "chihiro", 
     "chinatsu", "chise", "eimi", "fubuki", "fuuka", "hanae", "hanako", "hare", "haruka", "haruna", "hasumi", "hibiki", "hifumi", "hikari", 
     "himari", "hina", "hinata", "hiyori", "hoshino", "ibuki", "ichika", "iori", "iroha", "izumi", "izuna", "junko", "juri", "kaede", "kaho", 
     "kanna", "karin", "kasumi", "kayoko", "kazusa", "kikyou", "kirara", "kirino", "kisaki", "koharu", "kokona", "kotama", "kotori", "koyuki", 
@@ -10,7 +10,7 @@ const students = ["airi", "akane", "akari", "ako", "aoba", "arisu", "aru", "asun
     ];
 
 function pickHalo(arng) {
-    const randStudent = Math.ceil(arng.quick() * (students.length+1)) - 1;
+    const randStudent = Math.floor(arng.quick() * 28);
 
     const haloImg = document.getElementById("guess-image");
     console.log(randStudent + " " + students[randStudent]);
