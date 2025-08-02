@@ -31,8 +31,8 @@
             const month = date.getMonth();
             const day = date.getDate();
 
-            const seed = (year * 100) + month;
-            seed = (seed * 100) + day;
+            const seed = (((year * 100) + month) * 100) + day;
+            console.log(seed)
 
             const arng = new alea(seed);
             pickHalo(arng);
