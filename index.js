@@ -14,6 +14,6 @@ function pickHalo(arng) {
 
     const haloImg = document.getElementById("guess-image");
     console.log(randStudent + " " + students[randStudent]);
-    //haloImg.src = "students/" + students[randStudent] + "/halo.webp";
+    haloImg.src = "students/" + students[randStudent] + "/halo.webp";
 }
 
