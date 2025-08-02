@@ -12,7 +12,7 @@ const students = ["airi", "akane", "akari", "ako", "aoba", "aris", "aru", "asuna
 function pickHalo(arng) {
     const randStudent = Math.floor(arng.quick() * 28);
 
-    const haloImg = document.getElementById("guess-image");
+    const haloImg = document.getElementById("halo-img");
     console.log(randStudent + " " + students[randStudent]);
     haloImg.src = "students/" + students[randStudent] + "/halo.webp";
 }
